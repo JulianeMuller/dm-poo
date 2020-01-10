@@ -1,0 +1,15 @@
+<! DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Addresses</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+<div th:insert="myFragment :: myFragment1"/>
+	<h1>Les differentes adresses</h1>
+	<ul th:each="Address: ${allAddresses}">
+		<li th:text="${Address.content}" />
+		<li th:text="'Author : ' + ${Address.author}" />
+	</ul>
+</body>
+</html>

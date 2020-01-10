@@ -1,0 +1,16 @@
+<! DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Addresses</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+	<div th:insert="myFragment :: myFragment1"/>
+	<form action="/meteo" method="post">
+	    <div>
+	        <label for="name">Adresse:</label>
+	        <input type="text" id="adressFinder" name="adressFinder">
+	    </div>
+	</form>
+</body>
+</html>

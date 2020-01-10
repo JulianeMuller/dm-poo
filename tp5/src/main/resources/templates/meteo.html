@@ -1,0 +1,14 @@
+<! DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>MEteo</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+</head>
+<body>
+	<div th:insert="myFragment :: myFragment1"/>
+	<p th:text="${adresse}"/>
+	<p th:text="${meteo}"/>
+	<p th:text="${ville}"/>
+	<p th:text="${summary}"/>
+</body>
+</html>
